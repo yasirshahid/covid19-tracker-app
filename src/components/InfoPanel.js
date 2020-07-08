@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
+
 export default function InfoPanel() {
     const[globalData,setGlobalData]=useState({});
 
@@ -46,7 +47,8 @@ export default function InfoPanel() {
                 <Paper 
                     className={classes.paper}
                     elevation={3}>
-                        <h3>{key.replace(/_/g," ").toUpperCase()}</h3>
+                        <h3>
+                          {key.replace(/_/g," ").toUpperCase()}</h3>
                         <h3>{globalData[key]}</h3>
                 </Paper>
               </Grid>
